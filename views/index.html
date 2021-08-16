@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilos.css">
+    <script src="resources/js/dark-mode.js"></script>
+    <title>Document</title>
+</head>
+
+<header>
+
+    <nav class="barra-navegacion">
+
+        <div class="mode">
+            <input type="range" id="rango" min="0" max="1" onchange="cambiarModo()">
+        </div>
+
+        <div class="navegacion">
+
+            <ul class="menu">
+                <li><a id="estilo-registrar" class="btn-general" href="">Mi Perfil</a>
+                <ul class="sub-menu">
+                    <li><a href="logout">Salir</a></li>
+                </ul></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="logo">
+
+        <img src="resources/img/logo-myidea.png" alt="logo">
+
+    </div>
+
+
+</header>
+
+<body>
+
+    <div class="conteiner-guardar-mostrar-idea">
+
+        <div class="guardar">
+            <form class="box" action="guardar" method="post">
+                <span class="titulo"><h1>Guarda una Idea</h1></span>
+                <input  type="text" name="titulo" placeholder="Titulo">
+                <textarea id="describir" class="entrada-info" name="descripcion" placeholder="Detalles"></textarea>
+                <input type="submit" class="btn-general" name="" value="Guardar">
+        
+        
+              </form>
+        </div>
+
+        <div class="mostrar">
+            <div class="caja-titulo">
+                <span class="titulo"><h1>Mis Ideas</h1></span>
+            </div>
+            <div class="lista-mostrar">
+                <ul>
+                    <li><div>
+                        <span>Hola</span>
+                       <br><span>Hola mundo como estasssssssssssssssssssssssssssssssssssss</span>
+                    </div></li>
+                    <li>chau</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                    <li>Hola</li>
+                </ul>
+
+            </div>
+
+        </div> 
+      </div>    
+
+</body>
+</html>

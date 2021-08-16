@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/estilos.css">
+    <script src="resources/js/dark-mode.js"></script>
+    <title>MyIdea: Login</title>
+</head>
+
+<header>
+
+    <nav class="barra-navegacion">
+
+        <div class="mode">
+            <input type="range" id="rango" min="0" max="1" onchange="cambiarModo()">
+        </div>
+
+        <div class="navegacion">
+
+            <ul class="lista-nav">
+                <li><a id="estilo-registrar" class="btn-general" href="registrar">Registrarse</a></li>
+                <li><a class="estilo-login" href="login">Login</a></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="logo">
+
+      <img src="resources/img/logo-myidea.png" alt="logo">
+
+    </div>
+
+
+</header>
+<body>
+
+    <div class="conteiner-guardar-mostrar-idea">
+
+        <div class="login">
+            <form id="box-login" class="box" action="auth" method="post">
+                <span class="titulo"><h1>Login</h1></span>
+                <input type="text" name="user" placeholder="Usuario">
+                <input type="password" name="password" placeholder="Contraseña">
+                <input type="submit" class="btn-general" value="Logear">
+    
+              </form>
+        </div>
+      </div>
+
+    
+</body>
+</html>

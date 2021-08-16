@@ -1,0 +1,361 @@
+
+    *{
+
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+
+    }
+
+
+    /*Etiquetas*/
+
+
+    body{
+
+        background-color: #c8cdd0;
+ 
+
+    }
+
+    
+
+
+    .barra-navegacion{
+        background-color: white;
+        height: 38px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        gap: 15px;       
+
+    }
+
+    /* Controlamos el centrado (en altura) con el display y el padding */
+    /* ¿porq que necesito los dos, inline-block y inline? */
+
+    .navegacion li a{
+
+        display: inline-block;
+        padding: 5px;
+        /* color: black; */
+    }
+
+    .lista-nav li{
+
+        display: inline;
+    
+    }
+
+    .sub-menu{
+        display:none;
+        margin-top: 0.50px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .sub-menu li:hover{
+        background-color: #4DD2FF;
+        color: white;
+    }
+
+    .menu li:hover .sub-menu{
+        display: block;
+    }
+
+  
+
+      /* controlamos los margenes del boton con los margin */
+
+
+    .btn-general{
+
+        background-color: #4DD2FF;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #estilo-registrar{
+
+        /* background-color: #4DD2FF; */
+        /* border-radius: 5px; */
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .lista-nav .estilo-login{
+
+        color: black;
+        border: 1px solid #c8cdd0;
+        border-radius: 5px;
+
+    }
+
+
+    .mode input{
+
+        display: block;
+        padding: 10px 0;
+    }
+
+    #rango{
+
+        width: 40px;
+
+    }
+    .logo{
+
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 10px;
+
+    }
+
+
+    .conteiner-guardar-mostrar-idea{
+
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+        /* HotFix: mientras logramos crean una transicion de una forma correcta */
+        flex-wrap: wrap;
+        
+        
+
+    }
+    
+    
+    .box{
+
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        height: 220px;
+        border-radius: 5px;
+
+    }
+
+
+    .box input[type="text"],
+    .box input[type="email"],
+    .box input[type="password"]{
+
+       display: block;
+       margin: 5px auto 2px auto;
+       height: 25px;
+       width: 280px;
+       border: none;
+       border-radius: 2px;
+       background-color: #F1F3F3;
+       padding-left: 5px;
+       /* outline-color: #e68a00; */
+        outline: none;
+    }
+
+
+
+
+
+    #box-login{height: 180px;}
+
+    #box-registrar{height: 260px;}
+
+    .titulo{text-align: center}
+
+    .titulo h1{padding: 10px 10px 10px 10px;}
+
+    #describir{
+
+      display: block;
+      /* background-color: #F1F3F3; */
+      padding-left: 5px;
+      margin: 5px auto 2px auto;
+      border-radius: 2px;
+      height: 70px;
+      width: 280px;
+      resize: none; /*permite o no redimensionar la caja de texto*/
+      outline: none;
+
+    }
+
+    .entrada-info{
+
+        background-color: #F1F3F3;
+        border: none;
+        
+    }
+
+    .box input[type="submit"]{
+
+      display: block;
+      /* background-color: #4DD2FF; */
+      border: none;
+      /* border-radius: 8px; */
+      height: 28px;
+      width: 70px;
+      margin: 8px 20px auto auto;
+      /* cursor: pointer; */
+
+    }
+
+    #btn-register{
+        padding: 5px;
+        width: 80px;
+    }
+
+    .mostrar{
+
+        background-color: white;
+        height: 220px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    /* para que el overflow funcione necesita un height definida
+    or max-height o un espacio en blanco a traves del nowrap*/
+    .lista-mostrar{
+        height: 160px;
+        overflow-y: auto;
+
+    }
+
+
+
+    .box input[type="submit"]:hover, #estilo-registrar:hover{
+
+        background-color: #5ed6ff;
+        color: #f2f2f2
+    }
+
+    .estilo-login:hover{
+
+        background-color:  #e6e6e6;
+
+    }
+
+    .box input[type="text"]:focus,
+    .box input[type="email"]:focus,
+    .box input[type="password"]:focus,
+    .entrada-info:focus{
+        border: 1px solid #e68a00;
+       
+    }
+
+
+    .nueva-ventana{
+        width: 300px;
+        height: 300px;
+        background-color: #e6e6e6;
+    }
+
+
+
+    /* Dark Mode */
+
+    .dark-mode{
+
+        background-color: #171b1c;
+    }
+
+    .dark-mode-nav{
+        background-color: #404040;
+        
+    }
+
+    .dark-mode-cajas{
+
+        background-color: #404040;
+        
+    }
+
+    .dark-mode-cajas input[type="text"],
+    .dark-mode-cajas input[type="email"],
+    .dark-mode-cajas input[type="password"]{
+
+        background-color: #171b1c;
+        color: white;
+
+    }
+
+    .dark-mode-cajas input[type="text"]:focus,
+    .dark-mode-cajas input[type="email"]:focus,
+    .dark-mode-cajas input[type="password"]:focus,
+    .dark-mode-entrada-info:focus{
+        border-color: #995c00;
+    }
+
+
+    .dark-mode-titulo{
+
+        color: #F1F3F3;
+    }
+
+    .dark-mode-btn-general{
+
+        background-color: #0099CC;
+        color: white;
+    }
+
+    .dark-mode-entrada-info{
+        background-color: #171b1c;
+        color: white;
+    
+
+    }
+
+    .lista-nav .dark-mode-estilo-login{
+        background-color: #404040;
+        border-color: #995c00;
+        color: #F1F3F3;
+    }
+
+    .lista-nav .dark-mode-estilo-login:hover{
+        background-color: #171b1c;
+    }
+
+
+
+
+
+  
+
+
+    /* Media Query */
+
+    @media screen and (min-width: 1440px){
+
+        .logo{
+
+            padding: 10px 10px 10px 22px;
+    
+        }
+
+        .barra-navegacion{padding-right: 40px;}
+
+        .box, .mostrar{width: 400px; height: 230px;}
+
+        #box-login{height: 200px;}
+
+        #box-registrar{height: 310px;}
+
+        .box input[type="text"],
+        .box input[type="email"],
+        .box input[type="password"]{
+           height: 35px;
+           width: 380px;
+           font-size: 16px;
+        }
+
+        #describir{
+            height: 70px;
+            width: 380px;
+            font-size: 16px;
+         }
+
+
+    }
+
+
+
+    

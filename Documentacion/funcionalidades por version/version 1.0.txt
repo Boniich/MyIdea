@@ -1,0 +1,9 @@
+
+
+Funcionalidades de la version 1.0
+
+- Registro e inicio de session para usuarios
+- Guardar ida (titulo y descripcion)
+- Mostrar las ideas por usuario
+- Diseño Responsivo
+- Modo oscuro y modo normal
