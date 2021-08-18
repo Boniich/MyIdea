@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const index = require('./router/index');
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
@@ -21,6 +22,8 @@ app.use('/resources',express.static(__dirname + '/public'));
 app.set('view engine', 'ejs'); // seteamos las plantillas de ejs
 
 app.engine('html', require('ejs').renderFile); // me permite renderizar el html
+
+
 
 
 //Registracion
@@ -159,51 +162,8 @@ app.post('/guardar', async(req, res)=>{
 
 }); 
 
-
-//autenticacion de pagina
-
-app.get('/',(req, res)=>{
-
-    if(req.session.loggedin){
-
-        res.render('index.html',{
-            login: true,
-           
-        });
-
-        
-
-    }else{
-
-        res.render('portada.html',{
-
-            login: false
-        });
-
-    }
-
-});
-
-
-
-
-app.get('/registrar', (req, res)=>{
-
-    res.render('registrar.html')
-});
-
-app.get('/login', (req, res)=>{
-
-    res.render('login.html')
-});
-
-app.get('/logout', (req, res)=>{
-
-    req.session.destroy(()=>{
-        res.redirect('/');
-    })
-});
-
+//router 
+app.use('/',index);
 
 
 
