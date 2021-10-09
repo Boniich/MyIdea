@@ -314,6 +314,34 @@
         background-color: #171b1c;
     }
 
+    .box-description{
+        height: 200px;
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        gap: 30px;
+        background-color: #fff;
+    }
+
+    .box1, .box2{
+        width: 250px;
+        height: 150px;
+        border: 1px solid #ccc;
+        padding: 12px 10px;
+        border-radius: 5px;
+    }
+
+    .box1 h1, .box2 h1{
+        font-size: 28px;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .box1 p, .box2 p{
+        font-size: 18px;
+    }
 
 
 
